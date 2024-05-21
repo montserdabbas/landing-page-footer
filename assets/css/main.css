@@ -58,13 +58,91 @@
 
 }
 
+/*start Testimonials*/
+.testimonials {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.testimonials h2 {
+    margin-bottom: 20px;
+}
+
+.testimonials img {}
+
+.testimonials .row {
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+
+    width: calc((100% - 40px) / 2);
+    align-items: flex-start;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    position: relative;
+}
+.testimonial:after{
+    content:' ' ;
+    border-top: 40px solid #F4F4F4;
+    border-left : 40px solid  transparent ;
+    border-bottom : 40px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.testimonial .user-info {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.testimonial .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.testimonial .user-info .user-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.testimonial .user-info .user-data span {
+    font-size: 12px;
+    color: #646464;
+    font-weight: 400;
+    line-height: 9px;
+}
+
+.testimonial .raiting {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.testimonial q {
+    color: #646464;
+}
+
 /*start footer*/
 .footer {
     background-color: #393E46;
     padding: 50px 0;
 }
 
-.footer a ,h2{
+.footer a,
+h2 {
     color: #fff;
 }
 
@@ -92,20 +170,24 @@
     gap: 10px;
     flex-wrap: wrap;
 }
+
 .footer .footer-left-side .logo a {
     font-size: 14px;
 }
-.footer .footer-left-side p{
+
+.footer .footer-left-side p {
     color: #f4f4f4;
     font-size: 14px;
     font-weight: 200;
 }
-.footer .footer-left-side .icons{
+
+.footer .footer-left-side .icons {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    
+
 }
+
 .footer .footer-left-side .icons img {
     border: 1px solid #fff;
     width: 15px;
@@ -114,18 +196,21 @@
     box-sizing: content-box;
 
 }
- .footer-right-side .row {
+
+.footer-right-side .row {
     justify-content: space-evenly;
     align-items: flex-start;
 
 }
+
 .footer-right-side .footer-item {
     display: flex;
     flex-direction: column;
-     flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 30px;
-   
+
 }
+
 .footer-right-side .footer-item ul {
     display: flex;
     flex-direction: column;
